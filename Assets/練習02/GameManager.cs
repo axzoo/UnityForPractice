@@ -2,7 +2,8 @@
 
 public class GameManager : MonoBehaviour
 {
-    public soilder SoliderA = new soilder();
+    public Soldier SoliderA = new Soldier();
+    public Warrior WarriorA = new Warrior();
 
     private void Start()
     {
@@ -11,6 +12,12 @@ public class GameManager : MonoBehaviour
 
         SoliderA.SetExp(2107);
         Debug.Log("solider EXP - SET:" + SoliderA.Exp);
+
+        WarriorA.lv = 42;
+        Debug.Log("warrior EXP - GET:" + WarriorA.Exp);
+
+        WarriorA.Exp = 421;
+        Debug.Log("warrior EXP - SET:" + WarriorA.Exp);
     }
 
 
